@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio - Confeitaria Delícia</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/cardapio.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Confeitaria Delícia</h1>
+            <nav>
+                <ul>
+                    <li><a href="/">Início</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Cardápio</a></li>
+                    <li><a href="contatos">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <h2>Cardápio</h2>
+            <section class="menu">
+                <div class="menu-item">
+                    <img src="{{ url_for('static', filename='img/bolo chocolate.jpg') }}" alt="Bolo chocolate">
+                    <h2>Bolo de Chocolate</h2>
+                    <p>Um clássico irresistível com camadas de chocolate rico.</p>
+                    <span class="price">R$ 25,00</span>
+                    <button class="buy-button">Comprar</button>
+                </div>
+                <div class="menu-item">
+                    <img src="{{ url_for('static', filename='img/bolo-de-morango-3.jpeg') }}" alt="Bolo morango">
+                    <h2>Bolo de Morango</h2>
+                    <p>Fresco e frutado, perfeito para qualquer celebração.</p>
+                    <span class="price">R$ 30,00</span>
+                    <button class="buy-button">Comprar</button>
+                </div>
+                <div class="menu-item">
+                    <img src="{{ url_for('static', filename='img/bolo-de-cenoura-recheado.jpg') }}" alt="Bolo cenoura">
+                    <h2>Bolo de Cenoura</h2>
+                    <p>Uma delícia tradicional com cobertura de chocolate.</p>
+                    <span class="price">R$ 20,00</span>
+                    <button class="buy-button">Comprar</button>
+                </div>
+                <div class="menu-item">
+                    <img src="{{ url_for('static', filename='img/red velvet.jpg') }}" alt="Bolo red velvet">
+                    <h2>Bolo Red Velvet</h2>
+                    <p>Um bolo elegante com camadas de veludo vermelho e cream cheese.</p>
+                    <span class="price">R$ 35,00</span>
+                    <button class="buy-button">Comprar</button>
+                </div>
+                <div class="menu-item">
+                    <img src="{{ url_for('static', filename='img/limão.jpg') }}" alt="Bolo limão">
+                    <h2>Bolo de Limão</h2>
+                    <p>Refrescante e leve, com um toque de limão.</p>
+                    <span class="price">R$ 22,00</span>
+                    <button class="buy-button">Comprar</button>
+                </div>
+                <div class="menu-item">
+                    <img src="{{ url_for('static', filename='img/baunilha.jpg') }}" alt="Bolo baunilha">
+                    <h2>Bolo de Baunilha</h2>
+                    <p>Clássico e suave, ideal para qualquer ocasião.</p>
+                    <span class="price">R$ 18,00</span>
+                    <button class="buy-button">Comprar</button>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Confeitaria Delícia. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

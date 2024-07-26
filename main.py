@@ -8,5 +8,20 @@ def inicial():
     return render_template("index.html")
 
 
+@app.route('/contatos')
+def contato():
+    return render_template("contato.html")
+
+
+@app.route('/sobre')
+def sobre():
+    return render_template("sobre.html")
+
+
+@app.route('/cardapio')
+def cardapio():
+    return render_template("cardapio.html")
+
+
 if __name__ == '__main__':
     app.run()
